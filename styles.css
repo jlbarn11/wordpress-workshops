@@ -1,0 +1,44 @@
+
+/* For the regular weight fonts */
+@font-face {
+    font-family: 'Atkinson-Hyperlegible';
+    src: url('fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2');
+    src: url('fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'), 
+        url('fonts/WOFF/Atkinson-Hyperlegible-Regular-102.woff') format('woff'),
+        url('fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* For the bold weight fonts */
+@font-face {
+    font-family: 'Atkinson-Hyperlegible';
+    src: url('fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2');
+    src: url('fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'), 
+        url('fonts/WOFF/Atkinson-Hyperlegible-Bold-102.woff') format('woff'),
+        url('fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf') format('truetype');
+    font-weight: Bold;
+    font-style: normal;
+}
+
+/* Root styles/variables */
+:root{
+    /* theme colors */
+
+    /* text and neutral colors */
+    --white: #fff;
+    --light-gray: #eaeaea;
+    --med-gray: #555;
+    --dk-gray: #222;
+
+    /* shadows */
+    --box-shadow-sm: -3px 3px 6px var(--med-gray);
+    /* fonts */
+    font-family: 'Atkinson-Hyperlegible', Trebuchet, sans-serif;
+}
+
+/* body styles */
+body{
+    box-sizing: border-box;
+    color: var(--dk-gray);
+}
