@@ -24,6 +24,11 @@
 /* Root styles/variables */
 :root{
     /* theme colors */
+    --tea: #BFB8AE;
+    --cream: #F2EADF;
+    --swirl: #D9D1C7;
+    --dk-brown: #403B36;
+    --med-brown: #736B65;
 
     /* text and neutral colors */
     --white: #fff;
@@ -33,12 +38,164 @@
 
     /* shadows */
     --box-shadow-sm: -3px 3px 6px var(--med-gray);
+    --box-shadow-lg: -6px 6px 10px var(--med-gray);
+
     /* fonts */
     font-family: 'Atkinson-Hyperlegible', Trebuchet, sans-serif;
 }
-
+/* ---------- GLOBAL STYLES ---------- */
 /* body styles */
 body{
+    line-height: 1.5;
     box-sizing: border-box;
     color: var(--dk-gray);
+    background-color: var(--swirl);
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%23736b65' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-size: 1.25rem;
+}
+
+/* container styles */
+header, main, footer{
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--cream);
+}
+
+/* heading styles */
+h1, h2, h3, h4{
+    text-align: center;
+}
+
+/* link styles */
+a{
+    display: block;
+    text-align: center;
+}
+
+/* image styles */
+img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+/* text styles */
+p{
+    padding: 1rem 0;
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+dl{
+    max-width: 65ch;
+    margin: 1rem auto;
+}
+
+dt{
+    font-weight: bold;
+    color: var(--dk-brown);
+}
+
+dd{
+    margin: 0 0 1rem 0;
+}
+
+/* ---------- CUSTOM STYLES ---------- */
+/* header/footer shared styles */
+header, footer{
+    background-color: var(--dk-brown);
+    color: var(--cream);
+}
+
+/* heading styles */
+h1{
+    font-size: 3rem;
+}
+
+h1 span{
+    display: block;
+    font-size: 2rem;
+}
+
+h2, h3, h4{
+    color: var(--dk-brown);
+}
+
+h2{
+    font-size: 2.25rem;
+    margin: 0.5rem 0;
+}
+
+h3{
+    font-size: 1.75rem;
+    margin: 0.75rem 0;
+}
+
+h4{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* footer styles */
+footer{
+    text-align: center;
+}
+
+/* main styles */
+main{
+
+}
+
+dd a{
+    text-decoration: none;
+    color: var(--cream);
+    padding: 0.5rem;
+    background-color: var(--dk-brown);
+    margin: 1rem auto;
+    box-shadow: var(--box-shadow-lg);
+}
+
+dd a:hover{
+    box-shadow: var(--box-shadow-sm);
+}
+
+/* social media section styles */
+footer section{
+    width: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+footer h2{
+    font-size: 1.4rem;
+    color: var(--cream);
+    grid-column: 1/-1;
+}
+
+/* social media links & icons in footer */
+a.social-link{
+
+}
+
+a.social-link:hover svg{
+    stroke: var(--dk-brown);
+    background-color: var(--cream);
+}
+
+a.social-link svg{
+    stroke: var(--cream);
+    padding: 0.5rem;
+    transition: all 500ms;
+}
+
+/* email link in footer */
+footer a{
+    display: inline;
+    padding: 0;
+    color: var(--cream);
 }
