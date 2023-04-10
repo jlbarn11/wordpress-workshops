@@ -24,11 +24,14 @@
 /* Root styles/variables */
 :root{
     /* theme colors */
-    --tea: #BFB8AE;
-    --cream: #F2EADF;
-    --swirl: #D9D1C7;
-    --dk-brown: #403B36;
-    --med-brown: #736B65;
+    --boulder: #807B7B;
+    --silver-rust: #CCC5C4;
+    --sauvignon: #FFF7F5;
+    --wax-flower: #FFB8A9;
+    --roman-coffee: #805C54;
+
+    /* rgba color versions as needed */
+    --wax-flower-rgba: rgba(255, 184, 169, 0.1);
 
     /* text and neutral colors */
     --white: #fff;
@@ -37,8 +40,8 @@
     --dk-gray: #222;
 
     /* shadows */
-    --box-shadow-sm: -3px 3px 6px var(--med-gray);
-    --box-shadow-lg: -6px 6px 10px var(--med-gray);
+    --box-shadow-sm: -3px 3px 6px var(--dk-gray);
+    --box-shadow-lg: -6px 6px 10px var(--dk-gray);
 
     /* fonts */
     font-family: 'Atkinson-Hyperlegible', Trebuchet, sans-serif;
@@ -49,29 +52,29 @@ body{
     line-height: 1.5;
     box-sizing: border-box;
     color: var(--dk-gray);
-    background-color: var(--swirl);
-    background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%23736b65' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-color: var(--silver-rust);
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%23807B7B' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");
     font-size: 1.25rem;
 }
 
 /* container styles */
 header, main, footer{
     padding: 2rem 1rem;
-    width: 100%;
-    max-width: 1100px;
+    width: calc(100% - 2rem);
+    max-width: calc(1100px - 2rem);
     margin: 0 auto;
-    background-color: var(--cream);
+    background-color: var(--sauvignon);
 }
 
 /* heading styles */
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
     text-align: center;
 }
 
 /* link styles */
 a{
-    display: block;
-    text-align: center;
+    color: var(--dk-gray);
+    text-decoration-color: var(--wax-flower);
 }
 
 /* image styles */
@@ -82,21 +85,27 @@ img{
     height: auto;
 }
 
+picture{
+    display: block;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
 /* text styles */
 p{
     padding: 1rem 0;
-    max-width: 65ch;
+    max-width: 60ch;
     margin: 0 auto;
 }
 
 dl{
-    max-width: 65ch;
+    max-width: 60ch;
     margin: 1rem auto;
 }
 
 dt{
     font-weight: bold;
-    color: var(--dk-brown);
+    color: var(--roman-coffee);
 }
 
 dd{
@@ -106,8 +115,8 @@ dd{
 /* ---------- CUSTOM STYLES ---------- */
 /* header/footer shared styles */
 header, footer{
-    background-color: var(--dk-brown);
-    color: var(--cream);
+    background-color: var(--roman-coffee);
+    color: var(--sauvignon);
 }
 
 /* heading styles */
@@ -120,8 +129,8 @@ h1 span{
     font-size: 2rem;
 }
 
-h2, h3, h4{
-    color: var(--dk-brown);
+h2, h3, h4, h5{
+    color: var(--roman-coffee);
 }
 
 h2{
@@ -135,8 +144,39 @@ h3{
 }
 
 h4{
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     margin: 1rem 0;
+}
+
+h5{
+    font-size: 1.35rem;
+    margin: 1rem 0;
+}
+
+/* navigation styles */
+nav{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+nav ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.35rem;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--sauvignon);
+    color: var(--roman-coffee);
+}
+
+nav a:first-of-type{
+    margin-bottom: 1rem;
 }
 
 /* footer styles */
@@ -144,22 +184,36 @@ footer{
     text-align: center;
 }
 
-/* main styles */
-main{
+/* main content styles */
+#upcoming, #past{
+    padding: 2rem 0;
+    margin: 2rem auto 0 auto;
+    border-top: 4px dashed var(--wax-flower);
+}
 
+main h3{
+    text-decoration: 4px solid underline var(--wax-flower);
+}
+
+main > p{
+    font-size: 1.1rem;
+}
+
+.ind-wrkshp{
+    padding: 2rem 1rem;
+    background-color: var(--wax-flower-rgba);
 }
 
 dd a{
+    display: block;
+    text-align: center;
     text-decoration: none;
-    color: var(--cream);
-    padding: 0.5rem;
-    background-color: var(--dk-brown);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    background-color: var(--wax-flower);
     margin: 1rem auto;
     box-shadow: var(--box-shadow-lg);
-}
-
-dd a:hover{
-    box-shadow: var(--box-shadow-sm);
 }
 
 /* social media section styles */
@@ -173,7 +227,7 @@ footer section{
 
 footer h2{
     font-size: 1.4rem;
-    color: var(--cream);
+    color: var(--sauvignon);
     grid-column: 1/-1;
 }
 
@@ -182,13 +236,8 @@ a.social-link{
 
 }
 
-a.social-link:hover svg{
-    stroke: var(--dk-brown);
-    background-color: var(--cream);
-}
-
 a.social-link svg{
-    stroke: var(--cream);
+    stroke: var(--sauvignon);
     padding: 0.5rem;
     transition: all 500ms;
 }
@@ -197,5 +246,60 @@ a.social-link svg{
 footer a{
     display: inline;
     padding: 0;
-    color: var(--cream);
+    color: var(--sauvignon);
+}
+
+/* for medium screens */
+@media screen and (min-width: 601px){
+
+    /* navigation styles */
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* picture styles */
+    picture{
+        max-width: 100%;
+    }
+}
+
+/* for large screens */
+@media screen and (min-width: 901px){
+
+    /* adding a box shadow for nav links on larger screens for hover */
+    nav a{
+        box-shadow: var(--box-shadow-lg);
+    }
+}
+
+/* hover styles */
+@media (hover: hover){
+    /* for the links in the navigation */
+    nav a:hover{
+        box-shadow: var(--box-shadow-sm);
+    }
+
+    /* for the text-only links on the page */
+    a:hover{
+        color: var(--roman-coffee);
+    }
+
+    /* for the links that look like buttons in the main */
+    dd a:hover{
+        color: var(--dk-gray);
+        box-shadow: var(--box-shadow-sm);
+    }
+
+    /* for the social links in the footer */
+    a.social-link:hover svg{
+        stroke: var(--roman-coffee);
+        background-color: var(--sauvignon);
+    }
+
+    /* for the email link in the footer */
+    footer a:hover{
+        color: var(--wax-flower);
+    }
 }

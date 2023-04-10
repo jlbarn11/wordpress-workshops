@@ -19,52 +19,72 @@
     <body>
         <header>
             <h1>WordPress Workshops<span>Hosted by Graphic Information Technology</span></h1>
+            <nav aria-label="main navigation">
+                <ul>
+                    <li><a href="#upcoming">Upcoming Workshops</a></li>
+                    <li><a href="#past">Past Workshops</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
             <h2>Workshop Details</h2>
-            <p>You can find all of the workshops below, both past and future. </p>
+            <p>You can find all of the workshops below, both past and future, as well as links to recordings of the workshops where they are posted on YouTube. If you have a request or suggestion for a workshop topic, please <a href="mailto:j.barnett@asu.edu">email Prof. Barnett</a>.</p>
 
-            <section id="workshop2">
-                <h3>WordPress Workshop 2: Customizing WordPress Websites</h3>
-                <a href="https://asu.zoom.us/meeting/register/tZEtcO6tpjMvE9wHcDeYCIJW0zN5z1kMEKAB" target="_blank">
-                    <picture>
-                        <source media="(min-width: 600px)" srcset="images/workshop-2-small.png">
-                        <source media="" srcset="">
-                        <img src="images/wordpress-2-facebook.png" alt="Customizing Wordpress websites, workshop offered on Friday, april 21, 2023 at 3:00 p.m. over zoom and at Polytechnic in room technology center 194. r.s.v.p at http://bit.ly/git-wp-workshop-2" width="1200" height="630">
-                    </picture>
-                </a>
-                <p>An out of the box introduction to WordPress, covering the basics, how the dashboard is organized, the block-builder, and what you need to consider when building pages in WordPress. A little- to no-code workshop.</p>
-                <p>This workshop will be held in-person on the Polytechnic campus in Technology Center room 194 in addition to this Zoom offering. Please RSVP here for either version, we plan to make and share a recording of this workshop to those registered.</p>
-                <section>
-                    <h4>Workshop Details</h4>
-                    <dl>
-                        <dt>Date and Time</dt>
-                        <dd>This workshop will be held on <time datetime="2023-04-21">Friday, April 21st, 2023</time>, from <time datetime="15:00">3:00-4:00 p.m.</time> over Zoom and on the Polytechnic Campus in the Technology Center, room 194.</dd>
-                        <dt>Please Register to Attend, a Recording of the Workshop Will Be Shared with Those Who Register.</dt>
-                        <dd><a href="https://asu.zoom.us/meeting/register/tZEtcO6tpjMvE9wHcDeYCIJW0zN5z1kMEKAB" target="_blank">Register to Attend Workshop 2</a></dd>
-                    </dl>
+            <section id="upcoming">
+                <h3>Upcoming Workshops</h3>
+                <p>Please register to attend these workshops, whether you plan on attending in-person or over Zoom.</p>
+                <section id="workshop2" class="ind-wrkshp">
+                    <h4>Customizing WordPress Websites</h4>
+                    <a href="https://asu.zoom.us/meeting/register/tZEtcO6tpjMvE9wHcDeYCIJW0zN5z1kMEKAB" target="_blank">
+                        <picture>
+                            <source media="(min-width: 601px)" 
+                                srcset="images/workshop-2-med.png 868w,
+                                images/wordpress-2-facebook.png 1200w" 
+                                sizes="100%">
+                            <source media="(max-width: 600px)" srcset="images/workshop-2-small.png" sizes="350w" width="350" height="350">
+                            <img src="images/wordpress-2-facebook.png" alt="Customizing Wordpress websites, workshop offered on Friday, April 21, 2023 at 3:00 p.m. over zoom and at Polytechnic in room technology center 194. r.s.v.p at http://bit.ly/git-wp-workshop-2" width="1200" height="630">
+                        </picture>
+                    </a>
+                    <p>Join GIT and Web Application Developer Steve Ryan to learn more about customizing a WordPress website with custom content types, themes, creating child themes, and creating blocks using the block builder.</p>
+                    <p>This workshop will be held in-person on the Polytechnic campus in Technology Center room 194 in addition to this Zoom offering. Please RSVP here for either version, we plan to make and share a recording of this workshop to those registered.</p>
+                    <section>
+                        <h5>Workshop Details</h5>
+                        <dl>
+                            <dt>Date and Time:</dt>
+                            <dd>This workshop will be held on <time datetime="2023-04-21">Friday, April 21st, 2023</time>, from <time datetime="15:00">3:00-4:00 p.m.</time> over Zoom and on the Polytechnic Campus in the Technology Center, room 194.</dd>
+                            <dt>Please register to attend, a recording of the workshop will be shared with those who register.</dt>
+                            <dd><a href="https://asu.zoom.us/meeting/register/tZEtcO6tpjMvE9wHcDeYCIJW0zN5z1kMEKAB" target="_blank">Register to attend this workshop</a></dd>
+                        </dl>
+                    </section>
                 </section>
             </section>
             
-            <section id="workshop1">
-                <h3>WordPress Workshop 1: Introduction</h3>
-                <a href="http://links.asu.edu/wordpress-workshop" target="_blank">
-                    <picture>
-                        <source media="()" srcset="images/workshop-1-small.png"> 
-                        <source media="()" srcset="images/workshop-1-med.png">
-                        <img src="images/wordpress-1-facebook.png" alt="Introduction to Wordpress, workshop offered on Friday, april 7, 2023 at 3:00 p.m. over zoom and at Polytechnic in room technology center 194. r.s.v.p at http://links.asu.edu/wordpress-workshop" width="1200" height="630">
-                    </picture>
-                </a> 
-                <p>An out of the box introduction to WordPress, covering the basics, how the dashboard is organized, the block-builder, and what you need to consider when building pages in WordPress. A little- to no-code workshop.</p>
-                <section>
-                    <h4>Workshop Details</h4>
-                    <dl>
-                        <dt>Date and Time</dt>
-                        <dd>This workshop was held on <time datetime="2023-04-07">Friday, April 7th, 2023</time>, from <time datetime="15:00">3:00-4:00 p.m.</time> over Zoom and on the Polytechnic Campus in the Technology Center, room 194.</dd>
-                        <dt>A Recording of the Workshop Can Be Viewed on YouTube</dt>
-                        <dd><a href="https://youtu.be/dmMsm2JQyUA" target="_blank">View the recording of Workshop 1 on YouTube</a></dd>
-                    </dl>
+            <section id="past">
+                <h3>Past Workshops</h3>
+                <p>The workshops below occurred in the past, but a link to the video recording of the workshop can be found in each section. These topics may be covered again in a future workshop.</p>
+                <section id="workshop1" class="ind-wrkshp">
+                    <h4>Introduction to WordPress</h4>
+                    <a href="http://links.asu.edu/wordpress-workshop" target="_blank">
+                        <picture> 
+                            <source media="(min-width: 601px)" 
+                                srcset="images/workshop-1-med.png 868w,
+                                images/wordpress-1-facebook.png 1200w" 
+                                sizes="100%">
+                            <source media="(max-width: 600px)" srcset="images/workshop-1-small.png" sizes="350w" width="350" height="350">
+                            <img src="images/wordpress-1-facebook.png" alt="Introduction to Wordpress, workshop offered on Friday, April 7, 2023 at 3:00 p.m. over zoom and at Polytechnic in room technology center 194. r.s.v.p at http://links.asu.edu/wordpress-workshop" width="1200" height="630">
+                        </picture>
+                    </a> 
+                    <p>An out of the box introduction to WordPress, covering the basics, how the dashboard is organized, the block-builder, and what you need to consider when building pages in WordPress. A little- to no-code workshop.</p>
+                    <section>
+                        <h5>Workshop Details</h5>
+                        <dl>
+                            <dt>Date and Time:</dt>
+                            <dd>This workshop was held on <time datetime="2023-04-07">Friday, April 7th, 2023</time></dd>
+                            <dt>A recording of the workshop can be viewed on YouTube</dt>
+                            <dd><a href="https://youtu.be/dmMsm2JQyUA" target="_blank">View the recording of this workshop on YouTube</a></dd>
+                        </dl>
+                    </section>
                 </section>
             </section>
         </main>
@@ -96,7 +116,7 @@
                     </svg>
                 </a>
             </section>
-            <p>Questions? Feedback? <a href="mailto:j.barnett@asu.edu">Send an email to Professor Barnett</a> with your questions</p>
+            <p>Questions? Feedback? <a href="mailto:j.barnett@asu.edu">Send an email to Professor Barnett</a>.</p>
             <p>Copyright &copy;2023 - Barnett</p>
         </footer>
     </body>
