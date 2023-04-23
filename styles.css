@@ -301,19 +301,23 @@ footer a{
     #past{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 24px;
+        gap: 8px 24px;
     }
 
     #past h3, #past > p{
         grid-column: 1/-1;
     }
 
-    #past dt{
-        margin-top: 32px;
+    #past section{
+        padding: 0 16px;
     }
 
     .mobile-border-top{
         border-top: none;
+    }
+
+    #past dt{
+        margin-top: 32px;
     }
 }
 
