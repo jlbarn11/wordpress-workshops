@@ -116,7 +116,6 @@ dl{
 }
 
 dt{
-    font-weight: bold;
     color: var(--gray-1);
     padding: 4px 16px;
     margin-bottom: 8px;
@@ -216,7 +215,7 @@ main h3{
     padding: 2rem 1rem;
 }
 
-.border-top{
+.mobile-border-top{
     border-top: 2px dashed var(--gray-2);
 }
 
@@ -294,6 +293,28 @@ footer a{
     /* nav a{
         box-shadow: var(--box-shadow-lg);
     } */
+
+    .link-list a{
+        margin: 0;
+    }
+
+    #past{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    #past h3, #past > p{
+        grid-column: 1/-1;
+    }
+
+    #past dt{
+        margin-top: 32px;
+    }
+
+    .mobile-border-top{
+        border-top: none;
+    }
 }
 
 /* hover styles */
